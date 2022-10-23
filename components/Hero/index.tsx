@@ -9,7 +9,7 @@ const Hero = (props: Props) => {
 	const [text] = useTypewriter({
 		words: [
 			"<Frontend Developer />",
-			"HTML, CSS, JavaScript, React JS, Next JS, Wordpress"
+			"HTML | CSS | JavaScript | React JS | Next JS | Wordpress"
 		],
 		loop: true,
 		delaySpeed: 2000
@@ -42,7 +42,7 @@ const Hero = (props: Props) => {
 					<Link href="#projects">
 						<button className='hero-btn'>Projects</button>
 					</Link>
-					<Link href="#conatact">
+					<Link href="#contact">
 						<button className='hero-btn'>Contact</button>
 					</Link>
 				</div>

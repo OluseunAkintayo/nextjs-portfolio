@@ -1,14 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Card from './Card';
+import workData from './workData';
 
-type Props = {}
+type Props = {};
 
 const Work = (props: Props) => {
+	
 	return (
-		<section id="work" className='snap-center h-screen md:min-h-screen'>
+		<section id="work" className='snap-start min-h-screen overflow-y-auto'>
 			<div
-				className="flex flex-col relative h-full text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center p-6 pt-36 md:pt-20"
+				className="flex flex-col relative h-full text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center p-6 md:pt-48 pt-48"
 				>
 				<motion.h3
 					initial={{ opacity: 0, y: 100, scale: 0.5 }}
@@ -20,12 +22,9 @@ const Work = (props: Props) => {
 				</motion.h3>
 
 			<div className="w-full flex space-x-10 overflow-x-auto snap-x snap-mandatory">
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
+				{
+					workData.map(item => <Card item={item} key={item.id} />)
+				}
 			</div>
 			</div>
 

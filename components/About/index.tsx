@@ -11,7 +11,7 @@ const About = (props: Props) => {
 				<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl font-bold'>About</h3>
 				<motion.img
 					src="/img/port.jpg"
-					className='flex-shrink-0 w-64 h-64 object-cover rounded-full md:rounded-lg md:h-80 md:w-auto lg:h-[480px]'
+					className='flex-shrink-0 w-64 h-64 object-cover rounded-full md:rounded-lg md:h-80 md:w-auto lg:h-[480px] max-[500px]:w-48 max-[500px]:h-48'
 					initial={{ scale: 0.5, opacity: 0 }}
 					whileInView={{ scale: 1, opacity: 1 }}
 					transition={{ type: 'spring', stiffness: 100 }}
@@ -22,7 +22,7 @@ const About = (props: Props) => {
 					whileInView={{ scale: 1, opacity: 1 }}
 					transition={{ duration: 1 }}
 				>
-					<p className='text-base leading-8'>
+					<p className='text-sm leading-8'>
 						I am a frontend web application developer with the following tech stack:  HTML, CSS, Tailwind CSS, JavaScript, and React JS. I also have skills in planning, collaboration and teamwork, effective communication and customer relationship management. I specialize in creating responsive, pixel-perfect, user-friendly interfaces for web applications with the singular purpose of ensuring great end-user experience. Implemented web applications are responsive and accessible on all platforms - desktops, tablets, and mobile.
 						You may check out my portfolio <Link href="#work"><span className='text-gray-500 cursor-pointer underline'>below</span></Link>.
 					</p>

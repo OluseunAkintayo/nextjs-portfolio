@@ -7,7 +7,7 @@ type Props = {}
 const Skills = (props: Props) => {
 	return (
 		<section id="skills" className='min-h-screen snap-start'>
-			<motion.div className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row xl:px-10 justify-center items-center max-w-7xl mx-auto pt-36">
+			<motion.div className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row xl:px-10 justify-center items-center max-w-7xl mx-auto pt-36 md:pt-6">
 				<motion.h3
 					className="sectionHeader"
 					initial={{ opacity: 0, y: 100, scale: 0.5 }}
@@ -16,7 +16,7 @@ const Skills = (props: Props) => {
 				>
 					skills
 				</motion.h3>
-				<div className='flex flex-wrap justify-center gap-6 p-6'>
+				<div className='flex flex-wrap justify-center gap-6 p-6 text-sm'>
 					<div className="h-48 w-36 flex flex-col items-center justify-center gap-2 cursor-pointer p-4 rounded-lg transition-all border border-gray-700">
 						<motion.div
 							whileTap={{ scale: 0.9 }}
