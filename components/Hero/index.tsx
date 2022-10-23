@@ -8,7 +8,7 @@ type Props = {}
 const Hero = (props: Props) => {
 	const [text] = useTypewriter({
 		words: [
-			"I am a <Frontend Developer />",
+			"<Frontend Developer />",
 			"HTML, CSS, JavaScript, React JS, Next JS, Wordpress"
 		],
 		loop: true,
@@ -21,9 +21,9 @@ const Hero = (props: Props) => {
 				<Circles />
 				<div className="p-4 flex flex-col items-center space-y-8 z-20">
 					<img src="/img/port.jpg" draggable="false" className="relative rounded-full w-48 h-48 mx-auto object-cover" />
-					<h2 className="text-lg font-[300] uppercase tracking-[10px] text-gray-400">Oluseun Oladiipo</h2>
+					<h2 className="text-lg font-[300] text-center uppercase tracking-[10px] text-gray-400">Oluseun Oladiipo</h2>
 					<div className='mb-8'>
-						<h1 className="text-4xl lg:text-5xl px-4 text-center">
+						<h1 className="text-2xl lg:text-3xl px-4 text-center">
 							<span className='mr-2'>{text}</span>
 							<Cursor cursorColor='#e4e4e4' />
 						</h1>
