@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import projectsData from './data';
 import Link from 'next/link';
+import Footer from '../Footer';
 
 type Props = {}
 
@@ -51,6 +52,7 @@ const Projects = (props: Props) => {
 				<div className='w-full h-[200px] absolute top-[30%] bg-[#55524820] skew-y-12' />
 				
 			</motion.div>
+			<Footer />
 		</section>
 	)
 }

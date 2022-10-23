@@ -25,7 +25,6 @@ const Home: NextPage = () => {
       <Work />
       <Skills />
       <Projects />
-      <Contact />
     </div>
   )
 }
