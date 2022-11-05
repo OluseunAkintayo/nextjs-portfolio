@@ -9,7 +9,8 @@ const Hero = (props: Props) => {
 	const [text] = useTypewriter({
 		words: [
 			"<Frontend Developer />",
-			"HTML | CSS | JavaScript | React JS | Next JS | Wordpress"
+			"HTML | CSS | JavaScript",
+			"React JS | Next JS | Wordpress"
 		],
 		loop: true,
 		delaySpeed: 2000
