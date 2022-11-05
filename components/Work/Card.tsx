@@ -18,7 +18,7 @@ const Card = (props: Props) => {
 	const { item } = props;
 
 	return (
-		<article className='md:px-8 space-y-3 flex flex-col items-start flex-shrink-0 bg-gray-800 opacity-60 hover:opacity-100 transition-opacity duration-300 rounded-lg p-6 w-4/5 cursor-pointer snap-center md:w-[500px]'>
+		<article className='md:px-8 space-y-3 flex flex-col items-start flex-shrink-0 bg-gray-800 opacity-60 hover:opacity-100 transition-opacity duration-300 rounded-lg p-6 w-full cursor-pointer md:snap-center md:w-[500px]'>
 			<motion.div
 				initial={{ y: -100, opacity: 0.5 }}
 				whileInView={{ y:0, opacity: 1 }}

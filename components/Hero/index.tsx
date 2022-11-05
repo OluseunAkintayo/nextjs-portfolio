@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
 	});
 
 	return (
-		<section id="hero" className='h-screen overflow-hidden snap-start'>
+		<section id="hero" className='h-screen overflow-hidden md:snap-start'>
 			<div className='h-full flex flex-col items-center justify-center space-y-16'>
 				<Circles />
 				<div className="p-4 flex flex-col items-center space-y-8 z-20">

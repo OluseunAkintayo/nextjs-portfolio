@@ -6,7 +6,7 @@ type Props = {}
 
 const Skills = (props: Props) => {
 	return (
-		<section id="skills" className='min-h-screen snap-start'>
+		<section id="skills" className='min-h-screen md:snap-start'>
 			<motion.div className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row xl:px-10 justify-center items-center max-w-7xl mx-auto pt-36 md:pt-6">
 				<motion.h3
 					className="sectionHeader"

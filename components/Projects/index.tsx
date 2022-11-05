@@ -9,7 +9,7 @@ type Props = {}
 
 const Projects = (props: Props) => {
 	return (
-		<section id="projects" className='min-h-screen snap-start'>
+		<section id="projects" className='min-h-screen md:snap-start'>
 			<motion.div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row xl:px-6 justify-center items-center max-w-7xl mx-auto  pt-36 ">
 				<motion.h3
 					className="sectionHeader"
@@ -20,12 +20,12 @@ const Projects = (props: Props) => {
 					projects
 				</motion.h3>
 
-				<div className='w-full flex gap-6 overflow-x-auto snap-x snap-mandatory px-6'>
+				<div className='w-full flex max-[768px]:flex-wrap max-[768px]:items-center max-[768px]:justify-center gap-6 overflow-x-auto snap-x snap-mandatory px-6'>
 					{
 						projectsData.map((project, i) => (
 							<Link href={project.url} target="_blank" key={i+1}>
 								<div
-									className='max-[500px]:w-full w-[70%] md:w-[400px] snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer'
+									className='w-[378px] min-h-[475px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer'
 								>
 									<motion.div
 										className='bg-gray-600 w-3/5 rounded-full flex items-center justify-center aspect-[1]'

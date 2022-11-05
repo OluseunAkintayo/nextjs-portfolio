@@ -27,6 +27,20 @@ const workData = [
 			'Integrate REST APIs with the user interface for data visualization and CRUD operations.',
 			'Constantly monitor and enhance application performance through periodical codebase review, and fix detected bugs.'
 		]
+	},
+	{
+		id: 3,
+		workplace: 'Zuri Training',
+		workLogo: '/img/zuri.png',
+		title: 'Front-end Developer (Intern)',
+		skills: [],
+		period: 'Feb 2021 - June 2021',
+		jd: [
+			'Develop fully functional, cross-platform, cross-browser, and responsive end-to-end web user interfaces using React JS and CSS3/Tailwind CSS while integrating native and external libraries to implement needed features.',
+			'Translate UI/UX design wireframes into high-quality reusable code.',
+			'Integrate REST APIs with the user interface for data visualization and CRUD operations.',
+			'Constantly monitor and enhance application performance through periodical codebase review, and fix detected bugs.'
+		]
 	}
 ];
 

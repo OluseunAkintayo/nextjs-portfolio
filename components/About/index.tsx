@@ -6,7 +6,7 @@ type Props = {};
 
 const About = (props: Props) => {
 	return (
-		<section id="about" className='h-screen overflow-y-auto md:overflow-hidden snap-center'>
+		<section id="about" className='h-screen overflow-y-auto md:overflow-hidden md:snap-center'>
 			<div className="flex flex-col relative min-h-screen text-center md:text-left md:flex-row md:pt-6 pt-36 max-w-7xl justify-evenly mx-auto items-center p-6">
 				<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl font-bold'>About</h3>
 				<motion.img

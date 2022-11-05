@@ -1,5 +1,3 @@
-import { Aperture, ShoppingCart } from 'react-feather';
-
 const projectsData = [
 	{
 		id: 1,
@@ -13,7 +11,7 @@ const projectsData = [
 		id: 2,
 		name: 'The Shop',
 		icon: '/icons/cart.svg',
-		url: 'https://shop.techydna.com/',
+		url: 'https://the-shop-one.vercel.app/',
 		madeWith: 'React, Material UI, Styled Components',
 		summary: 'Shop for everyday items with ease'
 	},
@@ -21,7 +19,7 @@ const projectsData = [
 		id: 3,
 		name: 'Movies App',
 		icon: '/icons/video.svg',
-		url: 'https://techydna.com/movies',
+		url: 'https://portfolio-michaelson.vercel.app/movies',
 		madeWith: 'React, Material UI, Styled Components',
 		summary: 'Search for and view summary of trending movies'
 	}

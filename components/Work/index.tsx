@@ -8,7 +8,7 @@ type Props = {};
 const Work = (props: Props) => {
 	
 	return (
-		<section id="work" className='snap-start min-h-screen overflow-y-auto'>
+		<section id="work" className='md:snap-start min-h-screen overflow-y-auto'>
 			<div
 				className="flex flex-col relative h-full text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center p-6 md:pt-48 pt-48"
 				>
@@ -21,7 +21,7 @@ const Work = (props: Props) => {
 					Work History
 				</motion.h3>
 
-			<div className="w-full flex space-x-10 overflow-x-auto snap-x snap-mandatory">
+			<div className="w-full flex max-[768px]:flex-wrap max-[768px]:items-center max-[768px]:justify-center max-[768px]:space-y-10 md:space-x-10 overflow-x-auto snap-x snap-mandatory">
 				{
 					workData.map(item => <Card item={item} key={item.id} />)
 				}
