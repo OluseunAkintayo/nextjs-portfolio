@@ -4,7 +4,7 @@ const workData = [
 		workplace: 'UBA Plc.',
 		workLogo: '/img/uba-logo.png',
 		title: 'Front-end Developer',
-		skills: [],
+		skills: ['html5', 'css3', 'js', 'react', 'next', 'wordpress'],
 		period: 'june 2022 till date',
 		jd: [
 			'Developed modular, performant and responsive user interfaces for internal and customer-facing applications.',
@@ -17,9 +17,9 @@ const workData = [
 	{
 		id: 2,
 		workplace: 'Lampnets Solutions',
-		workLogo: '',
+		workLogo: '/img/lampnet.jpeg',
 		title: 'Front-end Developer',
-		skills: [],
+		skills: ['html5', 'css3', 'js', 'react'],
 		period: 'june 2021 - Feb 2022',
 		jd: [
 			'Develop fully functional, cross-platform, cross-browser, and responsive end-to-end web user interfaces using React JS and CSS3/Tailwind CSS while integrating native and external libraries to implement needed features.',
@@ -33,7 +33,7 @@ const workData = [
 		workplace: 'Zuri Training',
 		workLogo: '/img/zuri.png',
 		title: 'Front-end Developer (Intern)',
-		skills: [],
+		skills: ['html5', 'css3', 'js', 'react'],
 		period: 'Feb 2021 - June 2021',
 		jd: [
 			'Develop fully functional, cross-platform, cross-browser, and responsive end-to-end web user interfaces using React JS and CSS3/Tailwind CSS while integrating native and external libraries to implement needed features.',

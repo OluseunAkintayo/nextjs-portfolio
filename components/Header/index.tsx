@@ -1,9 +1,8 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 
-type Props = {}
+type Props = {};
 
 const Header = (props: Props) => {
 	return (
@@ -16,12 +15,10 @@ const Header = (props: Props) => {
 				<SocialIcon fgColor='gray' bgColor='transparent' url="https://github.com/oluseunakintayo" />
 				<SocialIcon fgColor='gray' bgColor='transparent' url="https://www.linkedin.com/in/oluseun-oladiipo-58a80491/" />
 			</motion.div>
-			<Link href="#contact">
-				<motion.div initial={{ x: 500, opacity: 0, scale: 0.2 }} animate={{ x: 0, opacity: 1, scale: 1 }} transition={{ duration: 1.5 }} className='flex items-center text-gray-300 cursor-pointer'>
-					<SocialIcon network='email' bgColor='transparent' fgColor='gray' />
-					<p className='uppercase hidden md:inline text-sm text-gray-400'>Get in Touch</p>
-					</motion.div>
-				</Link>
+			<motion.div initial={{ x: 500, opacity: 0, scale: 0.2 }} animate={{ x: 0, opacity: 1, scale: 1 }} transition={{ duration: 1.5 }} className='flex items-center text-gray-300 cursor-pointer'>
+				<SocialIcon network='email' bgColor='transparent' fgColor='gray' url="mailto:oluseun.oladiipo@gmail.com" className='animate-pulse' />
+				<p className='uppercase hidden md:inline text-sm text-gray-400'>Get in Touch</p>
+			</motion.div>
 		</header>
 	)
 }

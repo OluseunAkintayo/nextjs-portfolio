@@ -23,9 +23,9 @@ const Hero = (props: Props) => {
 				<div className="p-4 flex flex-col items-center space-y-8 z-20">
 					<img src="/img/port.jpg" draggable="false" className="relative rounded-full w-48 h-48 mx-auto object-cover" />
 					<h2 className="text-lg font-[300] text-center uppercase tracking-[10px] text-gray-400">Oluseun Oladiipo</h2>
-					<div className='mb-8'>
-						<h1 className="text-2xl lg:text-3xl px-4 text-center">
-							<span className='mr-2'>{text}</span>
+					<div className=''>
+						<h1 className="text-xl lg:text-3xl px-4 text-center -mt-4">
+							<span className='mr-1'>{text}</span>
 							<Cursor cursorColor='#e4e4e4' />
 						</h1>
 					</div>
@@ -43,9 +43,9 @@ const Hero = (props: Props) => {
 					<Link href="#projects">
 						<button className='hero-btn'>Projects</button>
 					</Link>
-					<Link href="#contact">
+					{/* <Link href="#contact">
 						<button className='hero-btn'>Contact</button>
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 		</section>

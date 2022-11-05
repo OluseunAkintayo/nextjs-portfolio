@@ -23,18 +23,21 @@ const Card = (props: Props) => {
 				initial={{ y: -100, opacity: 0.5 }}
 				whileInView={{ y:0, opacity: 1 }}
 				viewport={{ once: true }}
-				className='w-24 h-24 bg-gray-700 p-3 flex items-center justify-center rounded-full'
+					className={`w-24 h-24 ${ item.workLogo !== '/img/uba-logo.png' ? 'p-1' : 'p-3' } bg-gray-700 rounded-full flex items-center justify-center`}
 			>
-				<img src={item.workLogo} className="w-4/5 object-center" />
+				<img src={item.workLogo} className={`w-4/5 object-center ${ item.workLogo !== '/img/uba-logo.png' && 'rounded-full' }`} />
 			</motion.div>
 			<div className='space-y-1 text-gray-400 text-left'>
 				<h3 className='font-semibold text-2xl text-gray-400'>{item.title}</h3>
 				<p className='text-xl'>{item.workplace}</p>
 				<div className="flex space-x-2 my-2 max-[500px]:hidden">
-					<div className='bg-gray-500 h-12 w-12 rounded-full' />
-					<div className='bg-gray-500 h-12 w-12 rounded-full' />
-					<div className='bg-gray-500 h-12 w-12 rounded-full' />
-					<div className='bg-gray-500 h-12 w-12 rounded-full' />
+					{item.skills.map(skill => (
+						<div className='bg-gray-500 h-12 w-12 p-1 rounded-full flex items-center justify-center' key={skill}>
+							<img src={"/icons/" + skill + ".svg"} alt={skill}
+								className="h-4/5"
+							/>
+						</div>
+					))}
 				</div>
 				<p className='text-sm font-[300] uppercase py-1'>{item.period}</p>
 				<ul className='list-disc ml-4 space-y-2 text-lg'>
