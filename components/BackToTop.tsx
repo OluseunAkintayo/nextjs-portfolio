@@ -8,7 +8,7 @@ function BackToTop({}: Props) {
 
 	return (
 		<Link href="#hero">
-			<div title="Back to top" className='fixed z-100 bottom-5 right-5 cursor-pointer border border-gray-600 p-2 rounded-sm bg-gray-900 hover:scale-110'>
+			<div title="Back to top" className='fixed z-100 bottom-5 right-5 cursor-pointer border border-gray-600 p-2 rounded-md bg-gray-900 hover:scale-110'>
 				<ArrowUp />
 			</div>
 		</Link>

@@ -23,8 +23,8 @@ const About = (props: Props) => {
 					transition={{ duration: 1 }}
 				>
 					<p className='text-sm leading-8'>
-						I am a frontend web application developer with the following tech stack:  HTML, CSS, Tailwind CSS, JavaScript, and React JS. I also have skills in planning, collaboration and teamwork, effective communication and customer relationship management. I specialize in creating responsive, pixel-perfect, user-friendly interfaces for web applications with the singular purpose of ensuring great end-user experience. Implemented web applications are responsive and accessible on all platforms - desktops, tablets, and mobile.
-						You may check out my portfolio <Link href="#work"><span className='text-gray-500 cursor-pointer underline'>below</span></Link>.
+						I am a frontend web application developer with the following tech stack:  HTML, CSS/Tailwind CSS, JavaScript, React JS, Next JS and Wordpress. I also have skills in planning, collaboration and teamwork, effective communication and customer relationship management. I specialize in creating pixel-perfect and user-friendly interfaces for web applications with the singular purpose of ensuring great end-user experience. Implemented web applications are responsive and accessible on all platforms - desktops, tablets, and mobile.
+						You may check out some of my completed projects <Link href="#projects"><span className='text-gray-500 cursor-pointer underline'>below</span></Link>.
 					</p>
 				</motion.div>
 			</div>

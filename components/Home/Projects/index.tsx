@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import projectsData from './data';
 import Link from 'next/link';
 import Footer from '../Footer';
@@ -19,7 +18,6 @@ const Projects = (props: Props) => {
 				>
 					projects
 				</motion.h3>
-
 				<div className='w-full flex max-[768px]:flex-wrap max-[768px]:items-center max-[768px]:justify-center gap-6 overflow-x-auto snap-x snap-mandatory px-6'>
 					{
 						projectsData.map((project, i) => (
@@ -48,9 +46,7 @@ const Projects = (props: Props) => {
 						))
 					}
 				</div>
-
 				<div className='w-full h-[200px] absolute top-[30%] bg-[#55524820] skew-y-12' />
-				
 			</motion.div>
 			<Footer />
 		</section>

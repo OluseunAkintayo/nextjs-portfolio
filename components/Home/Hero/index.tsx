@@ -32,20 +32,17 @@ const Hero = (props: Props) => {
 				</div>
 				<div className="menuRow z-20 flex flex-wrap justify-center py-2 px-4 space-x-2">
 					<Link href="#about">
-						<button className='hero-btn'>About</button>
-					</Link>
-					<Link href="#work">
-						<button className='hero-btn'>Work History</button>
+						<button className='hero-btn'>About Me</button>
 					</Link>
 					<Link href="#skills">
 						<button className='hero-btn'>Skills</button>
 					</Link>
+					<Link href="#services">
+						<button className='hero-btn'>Services</button>
+					</Link>
 					<Link href="#projects">
 						<button className='hero-btn'>Projects</button>
 					</Link>
-					{/* <Link href="#contact">
-						<button className='hero-btn'>Contact</button>
-					</Link> */}
 				</div>
 			</div>
 		</section>
