@@ -51,7 +51,7 @@ const Services = (props: Props) => {
 							whileInView={{ scale: 1 }}
 							transition={{ duration: 1 }}
 						>
-							<img src={"/icons/api.png"} alt="" className='w-full' />
+							<img src={"/icons/seo.png"} alt="" className='w-full' />
 						</motion.div>
 						<div className='text-center space-y-3'>
 							<h3 className='font-semibold text-2xl text-gray-400 tracking-widest'>Search Engine Optimization</h3>
