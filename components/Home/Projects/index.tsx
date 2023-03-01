@@ -1,12 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import projectsData from './data';
-import Link from 'next/link';
 import Footer from '../Footer';
 
-type Props = {}
-
-const Projects = (props: Props) => {
+const Projects = () => {
 	return (
 		<section id="projects" className='min-h-screen md:snap-start'>
 			<motion.div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row xl:px-6 justify-center items-center max-w-7xl mx-auto  pt-36 ">
@@ -23,12 +21,12 @@ const Projects = (props: Props) => {
 						projectsData.map((project, i) => (
 							<Link href={project.url} target="_blank" key={i+1}>
 								<div
-									className='w-[378px] min-h-[475px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer'
+									className='w-[340px] min-h-[475px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center justify-center px-4 py-8 rounded-lg mb-10 cursor-pointer'
 								>
 									<motion.div
 										className='bg-gray-600 w-3/5 rounded-full flex items-center justify-center aspect-[1]'
 										initial={{ scale: 0.7 }}
-										whileInView={{ scale: 1 }}
+										whileInView={{ scale: 0.9 }}
 										transition={{ duration: 1 }}
 									>
 										<img

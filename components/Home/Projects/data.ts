@@ -1,12 +1,12 @@
-const projectsData = [
-	// {
-	// 	id: 1,
-	// 	name: 'Events Meme Generator',
-	// 	icon: '/icons/aperture.svg',
-	// 	url: 'https://meme-sterling.web.app/',
-	// 	madeWith: 'React, Material UI, Tailwind CSS',
-	// 	summary: 'Make memes with predefined templates using your pictures in a few steps'
-	// },
+const projectsData: { id: number; name: string; icon: string; url: string; madeWith: string; summary: string; }[] = [
+	{
+		id: 4,
+		name: 'Lendsqr Dashboard',
+		icon: '/img/lendsqr.png',
+		url: 'https://lendsqr.techydna.com/',
+		madeWith: 'React, SCSS',
+		summary: 'Manage customers and loan products'
+	},
 	{
 		id: 1,
 		name: 'Café One',
@@ -30,14 +30,6 @@ const projectsData = [
 		url: 'https://the-shop-one.vercel.app/',
 		madeWith: 'React, Material UI, Styled Components',
 		summary: 'Shop for everyday items with ease'
-	},
-	{
-		id: 4,
-		name: 'Movies App',
-		icon: '/icons/video.svg',
-		url: 'https://portfolio-michaelson.vercel.app/movies',
-		madeWith: 'React, Material UI, Styled Components',
-		summary: 'Search for and view summary of trending movies'
 	}
 ];
 

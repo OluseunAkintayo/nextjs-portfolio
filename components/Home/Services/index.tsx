@@ -41,7 +41,7 @@ const Services = (props: Props) => {
 						</motion.div>
 						<div className='text-center space-y-3'>
 							<h3 className='font-semibold text-2xl text-gray-400 tracking-widest'>API Integration and Development</h3>
-							<p className="text-sm text-gray-300 font-light">We integrate and develop APIs to enable your applications and websites interact with other data sources in order to make your business thrive.</p>
+							<p className="text-sm text-gray-300 font-light">We develop and integrate APIs to enable your applications and websites interact with other data sources for enriched user experience.</p>
 						</div>
 					</div>
 					<div className='w-[378px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all'>
@@ -55,7 +55,7 @@ const Services = (props: Props) => {
 						</motion.div>
 						<div className='text-center space-y-3'>
 							<h3 className='font-semibold text-2xl text-gray-400 tracking-widest'>Search Engine Optimization</h3>
-							<p className="text-sm text-gray-300 font-light">Our mission is to put you on top by driving traffic to your site the right way</p>
+							<p className="text-sm text-gray-300 font-light">Establish your online presence by driving traffic your site the right way</p>
 						</div>
 					</div>
 				</div>
