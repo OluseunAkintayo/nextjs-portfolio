@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -16,7 +17,7 @@ const Skills = (props: Props) => {
 				>
 					skills
 				</motion.h3>
-				<div className='flex flex-wrap justify-center gap-6 p-6 text-sm'>
+				<div className='flex flex-wrap justify-center gap-6 p-6 text-sm max-w-3xl'>
 					<div className="h-48 w-36 flex flex-col items-center justify-center gap-2 cursor-pointer p-4 rounded-lg transition-all border border-gray-700">
 						<motion.div
 							whileTap={{ scale: 0.9 }}
@@ -66,6 +67,26 @@ const Skills = (props: Props) => {
 							<Image src="/icons/next.svg" width="48px" height="48px" />
 						</motion.div>
 						<p className='tracking-widest uppercase'>next js</p>
+					</div>
+					<div className="h-48 w-36 flex flex-col items-center justify-center gap-2 cursor-pointer p-4 rounded-lg transition-all border border-gray-700">
+						<motion.div
+							whileTap={{ scale: 0.9 }}
+							whileHover={{ scale: 1.1 }}
+							className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
+						>
+							<Image src="/icons/nodejs.png" width="48px" height="48px" />
+						</motion.div>
+						<p className='tracking-widest uppercase'>Node js</p>
+					</div>
+					<div className="h-48 w-36 flex flex-col items-center justify-center gap-2 cursor-pointer p-4 rounded-lg transition-all border border-gray-700">
+						<motion.div
+							whileTap={{ scale: 0.9 }}
+							whileHover={{ scale: 1.1 }}
+							className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
+						>
+							<Image src="/icons/mongodb.png" width="48px" height="48px" />
+						</motion.div>
+						<p className='tracking-widest uppercase'>mongoDB</p>
 					</div>
 					<div className="h-48 w-36 flex flex-col items-center justify-center gap-2 cursor-pointer p-4 rounded-lg transition-all border border-gray-700">
 						<motion.div

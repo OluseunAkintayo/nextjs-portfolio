@@ -1,53 +1,48 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
-import projectsData from './data';
-import Footer from '../Footer';
+import Image from 'next/image';
+import projects from './data';
 
 const Projects = () => {
 	return (
-		<section id="projects" className='min-h-screen md:snap-start'>
-			<motion.div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row xl:px-6 justify-center items-center max-w-7xl mx-auto  pt-36 ">
-				<motion.h3
-					className="sectionHeader"
-					initial={{ opacity: 0, y: 100, scale: 0.5 }}
-					whileInView={{ opacity: 1, y: 0, scale: 1 }}
-					transition={{ duration: 1 }}
-				>
-					projects
-				</motion.h3>
-				<div className='w-full flex max-[768px]:flex-wrap max-[768px]:items-center max-[768px]:justify-center gap-6 overflow-x-auto snap-x snap-mandatory px-6'>
-					{
-						projectsData.map((project, i) => (
-							<Link href={project.url} target="_blank" key={i+1}>
-								<div
-									className='w-[340px] min-h-[475px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center justify-center px-4 py-8 rounded-lg mb-10 cursor-pointer'
-								>
+		<React.Fragment>
+			<section id="projects" className='min-h-screen md:snap-start'>
+				<motion.div className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row justify-center items-center max-w-7xl mx-auto pt-36 md:pt-6">
+					<motion.h3
+						className="sectionHeader"
+						initial={{ opacity: 0, y: 100, scale: 0.5 }}
+						whileInView={{ opacity: 1, y: 0, scale: 1 }}
+						transition={{ duration: 1 }}
+					>projects</motion.h3>
+					<div className='project-wrapper p-6 text-sm'>
+						{
+							projects.map((project) => (
+								<div key={project.id} className="project flex flex-col gap-4 cursor-pointer px-4 py-10 rounded-lg transition-all border border-gray-700">
 									<motion.div
-										className='bg-gray-600 w-3/5 rounded-full flex items-center justify-center aspect-[1]'
-										initial={{ scale: 0.7 }}
-										whileInView={{ scale: 0.9 }}
-										transition={{ duration: 1 }}
+										whileTap={{ scale: 0.9 }}
+										whileHover={{ scale: 1.1 }}
+										className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
 									>
-										<img
-											src={project.icon} alt=""
-											className='w-[60%] rounded-tl-lg rounded-tr-lg'
-										/>
+										<Image src={project.icon} width="40px" height="40px" className={project?.styling} />
 									</motion.div>
-									<div className='text-center space-y-3'>
-										<h3 className='font-semibold text-2xl text-gray-400 tracking-widest'>{project.name}</h3>
-										<p className='text-sm'>{project.summary}</p>
-										<p className='text-sm'>Made with {project.madeWith}</p>
+									<h2 className="text-2xl text-gray-400 font-semibold tracking-widest text-left leading-7">{project.name}</h2>
+									<p className="text-left text-sm text-gray-300">{project.summary}</p>
+									<p className="text-left text-sm text-gray-300 leading-4">Made with {project.madeWith}</p>
+									<div className='text-xs flex gap-4'>
+										<a href={project.url} target="_blank" rel="noreferrer" className="project-link text-gray-400 uppercase font-semibold tracking-widest">View Project</a>
+										<a href={project.github} target="_blank" rel="noreferrer" className="project-link text-gray-400 uppercase font-semibold tracking-widest">View Code</a>
 									</div>
 								</div>
-							</Link>
-						))
-					}
+							))
+						}
+					</div>
+				</motion.div>
+				<div className="h-24 flex items-center justify-center border-t border-opacity-30 border-gray-400">
+					&copy; TechyDNA { new Date().getFullYear() }
 				</div>
-				<div className='w-full h-[200px] absolute top-[30%] bg-[#55524820] skew-y-12' />
-			</motion.div>
-			<Footer />
-		</section>
+			</section>
+		</React.Fragment>
 	)
 }
 

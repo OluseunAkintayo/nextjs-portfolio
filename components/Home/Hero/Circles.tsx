@@ -1,9 +1,7 @@
 import React from 'react';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-type Props = {}
-
-const Circles = (props: Props) => {
+const Circles = () => {
 	return (
 		<motion.div
 			className='relative flex justify-center items-center'

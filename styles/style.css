@@ -9,3 +9,52 @@ html {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 }
+
+.project-wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+}
+
+@media(max-width: 900px) {
+	.project-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media(max-width: 600px) {
+	.project-wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+
+.project {
+	width: 100%;
+}
+
+.project-link::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 0;
+	background-color: coral;
+	transition: all ease-in-out 0.3s;
+}
+
+.project-link:hover::after {
+	width: 100%;
+}
+
+.overwatch-img {
+	border-radius: 50%;
+}
+
+.project-item .img-container {
+	transition: all ease-in-out 0.3s;
+}
+
+.project-item .img-container:hover {
+	transform: scale(1.005) !important;
+	cursor: pointer;
+}

@@ -1,19 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import Circles from './Circles';
 
-type Props = {}
-
-const Hero = (props: Props) => {
+const Hero = () => {
 	const [text] = useTypewriter({
 		words: [
-			"<Frontend Developer />",
+			"<Software Developer />",
 			"HTML | CSS | JavaScript",
-			"React JS | Next JS | Wordpress"
+			"React JS | Next JS",
+			"MongoDB | Postgres | Express | NodeJS"
 		],
 		loop: true,
-		delaySpeed: 2000
+		delaySpeed: 3500
 	});
 
 	return (
@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
 			<div className='h-full flex flex-col items-center justify-center space-y-16'>
 				<Circles />
 				<div className="p-4 flex flex-col items-center space-y-8 z-20">
-					<img src="/img/port.jpg" draggable="false" className="relative rounded-full w-48 h-48 mx-auto object-cover" />
+					<img src="/img/port.jpg" draggable="false" className="relative rounded-full w-48 h-48 mx-auto object-cover" alt="[]" />
 					<h2 className="text-lg font-[300] text-center uppercase tracking-[10px] text-gray-400">Oluseun Oladiipo</h2>
 					<div className=''>
 						<h1 className="text-xl lg:text-3xl px-4 text-center -mt-4">

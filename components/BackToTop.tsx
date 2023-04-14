@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { ArrowUp } from 'react-feather';
 
-function BackToTop() {
+const BackToTop = () => {
 
 	return (
 		<Link href="#hero">
