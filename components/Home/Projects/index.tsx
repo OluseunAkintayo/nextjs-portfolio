@@ -7,7 +7,7 @@ import projects from './data';
 const Projects = () => {
 	return (
 		<React.Fragment>
-			<section id="projects" className='min-h-screen md:snap-start'>
+			<section id="projects" className='min-h-screen lg:snap-start'>
 				<motion.div className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row justify-center items-center max-w-7xl mx-auto pt-36 md:pt-6">
 					<motion.h3
 						className="sectionHeader"
@@ -15,7 +15,7 @@ const Projects = () => {
 						whileInView={{ opacity: 1, y: 0, scale: 1 }}
 						transition={{ duration: 1 }}
 					>projects</motion.h3>
-					<div className='project-wrapper p-6 text-sm'>
+					<div className='p-6 text-sm grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
 						{
 							projects.map((project) => (
 								<div key={project.id} className="project flex flex-col gap-4 cursor-pointer px-4 py-10 rounded-lg transition-all border border-gray-700">
