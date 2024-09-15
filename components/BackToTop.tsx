@@ -9,11 +9,11 @@ const BackToTop = () => {
 	}
 
 	return (
-		<button onClick={backToTop}>
+		<a href="#hero">
 			<div title="Back to top" className='fixed z-100 bottom-5 right-5 cursor-pointer border border-gray-600 p-2 rounded-md bg-gray-900 hover:scale-110'>
 				<ArrowUp />
 			</div>
-		</button>
+		</a>
 	)
 }
 
