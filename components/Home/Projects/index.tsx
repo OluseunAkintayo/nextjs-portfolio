@@ -15,10 +15,10 @@ const Projects = () => {
 						whileInView={{ opacity: 1, y: 0, scale: 1 }}
 						transition={{ duration: 1 }}
 					>projects</motion.h3>
-					<div className='p-6 text-sm grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+					<div className='p-6 text-sm grid gap-6 grid-cols-1 sm:grid-cols-2'>
 						{
 							projects.map((project) => (
-								<div key={project.id} className="project flex flex-col gap-4 cursor-pointer px-4 py-10 rounded-lg transition-all border border-gray-700">
+								<div key={project.id} className="project flex flex-col gap-4 cursor-pointer px-8 py-10 rounded-lg transition-all border border-gray-800 hover:bg-gray-800/30">
 									<motion.div
 										whileTap={{ scale: 0.9 }}
 										whileHover={{ scale: 1.1 }}
@@ -30,8 +30,8 @@ const Projects = () => {
 									<p className="text-left text-sm text-gray-300">{project.summary}</p>
 									<p className="text-left text-sm text-gray-300 leading-4">Made with {project.madeWith}</p>
 									<div className='text-xs flex gap-4'>
-										<a href={project.url} target="_blank" rel="noreferrer" className="project-link text-gray-400 uppercase font-semibold tracking-widest">View Project</a>
-										<a href={project.github} target="_blank" rel="noreferrer" className="project-link text-gray-400 uppercase font-semibold tracking-widest">View Code</a>
+										{/* <a href={project.url} target="_blank" rel="noreferrer" className="project-link text-gray-400 uppercase font-semibold tracking-widest">View Project</a> */}
+										<a href={project.github} target="_blank" rel="noreferrer" className="project-link text-gray-400 uppercase font-semibold tracking-widest">View on Github</a>
 									</div>
 								</div>
 							))
@@ -39,7 +39,7 @@ const Projects = () => {
 					</div>
 				</motion.div>
 				<div className="h-24 flex items-center justify-center border-t border-opacity-30 border-gray-400">
-					&copy; TechyDNA { new Date().getFullYear() }
+					&copy; TechyDNA {new Date().getFullYear()}
 				</div>
 			</section>
 		</React.Fragment>

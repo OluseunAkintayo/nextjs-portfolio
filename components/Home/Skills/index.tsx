@@ -18,8 +18,8 @@ const Skills = (props: Props) => {
 					skills
 				</motion.h3>
 				<div className="transition-all duration-300">
-					<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-center gap-6 p-6 text-sm max-w-3xl'>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
+					<div className='grid grid-cols-2 sm:grid-cols-3 justify-center gap-6 p-6 text-sm max-w-3xl'>
+						{/* <div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	">
 							<motion.div
 								whileTap={{ scale: 0.95 }}
 								whileHover={{ scale: 1.05 }}
@@ -28,18 +28,18 @@ const Skills = (props: Props) => {
 								<Image src="/icons/html5.svg" width="48px" height="48px" />
 							</motion.div>
 							<p className='tracking-widest'>HTML5</p>
-						</div>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
+						</div> */}
+						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600 hover:bg-gray-800/30">
 							<motion.div
 								whileTap={{ scale: 0.95 }}
 								whileHover={{ scale: 1.05 }}
 								className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
 							>
-								<Image src="/icons/css3.svg" width="48px" height="48px" />
+								<Image src="/icons/typescript.svg" width="48px" height="48px" />
 							</motion.div>
-							<p className='tracking-widest'>CSS3</p>
+							<p className='tracking-widest'>Typescript</p>
 						</div>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
+						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	hover:bg-gray-800/30">
 							<motion.div
 								whileTap={{ scale: 0.95 }}
 								whileHover={{ scale: 1.05 }}
@@ -49,7 +49,7 @@ const Skills = (props: Props) => {
 							</motion.div>
 							<p className='tracking-widest uppercase'>javascript</p>
 						</div>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
+						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	hover:bg-gray-800/30">
 							<motion.div
 								whileTap={{ scale: 0.95 }}
 								whileHover={{ scale: 1.05 }}
@@ -59,17 +59,7 @@ const Skills = (props: Props) => {
 							</motion.div>
 							<p className='tracking-widest uppercase'>react js</p>
 						</div>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
-							<motion.div
-								whileTap={{ scale: 0.95 }}
-								whileHover={{ scale: 1.05 }}
-								className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
-							>
-								<Image src="/icons/dotnet.svg" width="48px" height="48px" />
-							</motion.div>
-							<p className='tracking-widest uppercase'>Dotnet</p>
-						</div>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
+						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	hover:bg-gray-800/30">
 							<motion.div
 								whileTap={{ scale: 0.95 }}
 								whileHover={{ scale: 1.05 }}
@@ -79,7 +69,27 @@ const Skills = (props: Props) => {
 							</motion.div>
 							<p className='tracking-widest uppercase'>Node js</p>
 						</div>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
+						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	hover:bg-gray-800/30">
+							<motion.div
+								whileTap={{ scale: 0.95 }}
+								whileHover={{ scale: 1.05 }}
+								className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
+							>
+								<Image src="/icons/dotnet.svg" width="48px" height="48px" />
+							</motion.div>
+							<p className='tracking-widest uppercase'>Dotnet</p>
+						</div>
+						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	hover:bg-gray-800/30">
+							<motion.div
+								whileTap={{ scale: 0.95 }}
+								whileHover={{ scale: 1.05 }}
+								className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
+							>
+								<Image src="/icons/dotnet.svg" width="48px" height="48px" />
+							</motion.div>
+							<p className='tracking-widest uppercase'>Dotnet</p>
+						</div>
+						{/* <div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	">
 							<motion.div
 								whileTap={{ scale: 0.95 }}
 								whileHover={{ scale: 1.05 }}
@@ -89,7 +99,7 @@ const Skills = (props: Props) => {
 							</motion.div>
 							<p className='tracking-widest uppercase'>mongoDB</p>
 						</div>
-						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-4 py-8 rounded-lg transition-all border border-gray-700 shadow shadow-slate-600	">
+						<div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	">
 							<motion.div
 								whileTap={{ scale: 0.95 }}
 								whileHover={{ scale: 1.05 }}
@@ -98,7 +108,7 @@ const Skills = (props: Props) => {
 								<Image src="/icons/wordpress.svg" width="48px" height="48px" />
 							</motion.div>
 							<p className='tracking-widest uppercase'>wordpress</p>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</motion.div>

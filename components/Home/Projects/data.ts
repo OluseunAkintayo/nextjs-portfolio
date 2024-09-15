@@ -19,17 +19,17 @@ const projectsData: { id: number; name: string; icon: string; url: string; githu
 		madeWith: 'React, Material UI, Styled Components',
 		summary: 'Shop for everyday items with ease'
 	},
-	{
-		id: 3,
-		name: 'Overwatch',
-		icon: '/icons/overwatch-min.png',
-		url: 'https://overwatch-delta.vercel.app/',
-		// url: 'https://overwatch.techydna.com/',
-		github: 'https://github.com/OluseunAkintayo/overwatch',
-		madeWith: 'React, Express, MongoDB',
-		summary: 'The complete inventory management system',
-		styling: 'overwatch-img'
-	}
+	// {
+	// 	id: 3,
+	// 	name: 'Overwatch',
+	// 	icon: '/icons/overwatch-min.png',
+	// 	url: 'https://overwatch-delta.vercel.app/',
+	// 	// url: 'https://overwatch.techydna.com/',
+	// 	github: 'https://github.com/OluseunAkintayo/overwatch',
+	// 	madeWith: 'React, Express, MongoDB',
+	// 	summary: 'The complete inventory management system',
+	// 	styling: 'overwatch-img'
+	// }
 ];
 
 export default projectsData;

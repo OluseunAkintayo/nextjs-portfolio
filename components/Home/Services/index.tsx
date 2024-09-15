@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-type Props = {}
+type Props = {};
 
 const Services = (props: Props) => {
 	return (
@@ -16,10 +16,10 @@ const Services = (props: Props) => {
 				>
 					services
 				</motion.h3>
-				<div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex gap-6 lg:overflow-x-auto lg:snap-x lg:snap-mandatory px-6'>
+				<div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex gap-6 px-6'>
 					<div className='lg:w-[378px] snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all shadow-sm shadow-slate-700 border border-slate-600'>
 						<motion.div
-							className='bg-gray-600 w-1/3 p-8 rounded-full flex items-center justify-center aspect-[1]'
+							className='bg-gray-600 max-w-[144px] p-8 rounded-full flex items-center justify-center aspect-[1]'
 							initial={{ scale: 0.7 }}
 							whileInView={{ scale: 1 }}
 							transition={{ duration: 1 }}
@@ -33,7 +33,7 @@ const Services = (props: Props) => {
 					</div>
 					<div className='lg:w-[378px] snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all shadow-sm shadow-slate-700 border border-slate-600'>
 						<motion.div
-							className='bg-gray-600 w-1/2 rounded-full flex items-center justify-center aspect-[1] p-8'
+							className='bg-gray-600 max-w-[144px] rounded-full flex items-center justify-center aspect-[1] p-8'
 							initial={{ scale: 0.7 }}
 							whileInView={{ scale: 1 }}
 							transition={{ duration: 1 }}
@@ -47,7 +47,7 @@ const Services = (props: Props) => {
 					</div>
 					<div className='lg:w-[378px] snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all shadow-sm shadow-slate-700 border border-slate-600'>
 						<motion.div
-							className='bg-gray-600 w-1/2 rounded-full flex items-center justify-center aspect-[1] p-8'
+							className='bg-gray-600 max-w-[144px] rounded-full flex items-center justify-center aspect-[1] p-8'
 							initial={{ scale: 0.7 }}
 							whileInView={{ scale: 1 }}
 							transition={{ duration: 1 }}
