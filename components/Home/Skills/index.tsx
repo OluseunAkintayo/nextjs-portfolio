@@ -85,9 +85,9 @@ const Skills = (props: Props) => {
 								whileHover={{ scale: 1.05 }}
 								className="bg-gray-500 w-20 h-20 rounded-full flex items-center justify-center"
 							>
-								<Image src="/icons/dotnet.svg" width="48px" height="48px" />
+								<Image src="/icons/postgresql.svg" width="48px" height="48px" />
 							</motion.div>
-							<p className='tracking-widest uppercase'>Dotnet</p>
+							<p className='tracking-widest uppercase'>Postgres</p>
 						</div>
 						{/* <div className="flex flex-col items-center justify-center gap-4 cursor-pointer px-10 py-10 rounded-lg transition-all border border-gray-800 shadow shadow-slate-600	">
 							<motion.div
