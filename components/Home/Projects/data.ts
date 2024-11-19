@@ -29,7 +29,7 @@ const projectsData: { id: number; name: string; icon: string; url: string; githu
 		id: 3,
 		name: 'BWC Consult',
 		icon: '/img/bwc.png',
-		url: 'https://bwcconsult.co.uk',
+		url: 'https://www.bwcconsult.co.uk',
 		madeWith: 'React, Tailwind',
 		summary: 'A website for an IT consulting firm'
 	},
