@@ -17,6 +17,14 @@ const projectsData: { id: number; name: string; icon: string; url: string; githu
 		github: 'https://github.com/OluseunAkintayo/InvoiceMaker-UI',
 	},
 	{
+		id: 3,
+		name: 'BWC Consult',
+		icon: '/img/bwc.png',
+		url: 'https://www.bwcconsult.co.uk',
+		madeWith: 'React, Tailwind',
+		summary: 'A website for an IT consulting firm'
+	},
+	{
 		id: 1,
 		name: 'Lendsqr Dashboard',
 		icon: '/img/lendsqr.png',
@@ -33,14 +41,6 @@ const projectsData: { id: number; name: string; icon: string; url: string; githu
 		github: 'https://github.com/OluseunAkintayo/the-shop',
 		madeWith: 'React, Material UI, Styled Components',
 		summary: 'Shop for everyday items with ease'
-	},
-	{
-		id: 3,
-		name: 'BWC Consult',
-		icon: '/img/bwc.png',
-		url: 'https://www.bwcconsult.co.uk',
-		madeWith: 'React, Tailwind',
-		summary: 'A website for an IT consulting firm'
 	},
 	// {
 	// 	id: 4,

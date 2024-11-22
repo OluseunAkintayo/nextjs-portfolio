@@ -15,7 +15,7 @@ const Projects = () => {
 						whileInView={{ opacity: 1, y: 0, scale: 1 }}
 						transition={{ duration: 1 }}
 					>projects</motion.h3>
-					<div className='p-6 text-sm grid gap-6 grid-cols-1 sm:grid-cols-2 mt-12'>
+					<div className='p-6 text-sm grid gap-6 grid-cols-1 sm:grid-cols-2 mt-32'>
 						{
 							projects.map((project) => (
 								<div key={project.id} className="project flex flex-col gap-4 cursor-pointer px-8 py-10 rounded-lg transition-all border border-gray-700 hover:bg-gray-800/30">
