@@ -20,7 +20,7 @@ const About = (props: Props) => {
 					>
 					</motion.div>
 					<motion.div
-						className="flex flex-col justify-center items-center gap-8 rounded shadow-md shadow-slate-700 border border-gray-700 aspect-square p-8"
+						className="flex flex-col justify-center items-center gap-8 rounded shadow-md lg:shadow-slate-800 lg:border lg:border-gray-800 aspect-square p-8"
 						initial={{ scale: 0.5, opacity: 0 }}
 						whileInView={{ scale: 1, opacity: 1 }}
 						transition={{ duration: 1 }}
@@ -29,8 +29,8 @@ const About = (props: Props) => {
 							className='oblock lg:hidden rounded-full w-1/3'
 							alt="Oluseun Oladiipo"
 						/>
-						<p className='leading-8 mt-4 lg:mt-0 lg:text-left text-justify'>
-							I am a software developer with the following tech stack:  HTML, CSS/Tailwind CSS, JavaScript, React JS, Next JS and Wordpress. I also have skills in planning, collaboration and teamwork, effective communication and customer relationship management. I specialize in creating pixel-perfect and user-friendly interfaces for web applications with the singular purpose of ensuring great end-user experience. Implemented web applications are responsive and accessible on all platforms - desktops, tablets, and mobile.
+						<p className='leading-8 mt-4 lg:mt-0 lg:text-left text-justify max-w-[550px]'>
+							I am a software developer with the following tech stack:  HTML, CSS/Tailwind CSS, JavaScript, React JS, Next JS and Wordpress. I also have skills in planning, collaboration and teamwork, effective communication and customer relationship management.<br /> I love creating pixel-perfect and user-friendly interfaces for web applications with the singular purpose of ensuring great end-user experience. Implemented web applications are responsive and accessible on all platforms - desktops, tablets, and mobile.
 							You may check out some of my completed projects <Link href="#projects"><span className='text-gray-500 cursor-pointer underline'>below</span></Link>.
 						</p>
 					</motion.div>
