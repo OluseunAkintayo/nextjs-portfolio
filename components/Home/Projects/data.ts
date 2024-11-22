@@ -8,6 +8,15 @@ const projectsData: { id: number; name: string; icon: string; url: string; githu
 		summary: 'Events meme generator for Sterling Bank Plc.'
 	},
 	{
+		id: 6,
+		name: "Invoice Generator",
+		icon: "https://img.icons8.com/ultraviolet/40/file.png",
+		url: "https://invoice-maker-ui.vercel.app/",
+		madeWith: "React, Tailwind CSS, Shadcn",
+		summary: "Generate invoices for your business",
+		github: 'https://github.com/OluseunAkintayo/InvoiceMaker-UI',
+	},
+	{
 		id: 1,
 		name: 'Lendsqr Dashboard',
 		icon: '/img/lendsqr.png',
