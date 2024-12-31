@@ -11,7 +11,7 @@ const projectsData: { id: number; name: string; icon: string; url: string; githu
 		id: 6,
 		name: "Invoice Generator",
 		icon: "https://img.icons8.com/ultraviolet/40/file.png",
-		url: "https://invoice-maker-ui.vercel.app/",
+		url: "https://invoice--gen.vercel.app/",
 		madeWith: "React, Tailwind CSS, Shadcn",
 		summary: "Generate invoices for your business",
 		github: 'https://github.com/OluseunAkintayo/InvoiceMaker-UI',
