@@ -14,11 +14,12 @@ const Home: NextPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>TechyDNA - Front-end Developer | HTML, CSS, JavaScript, React JS, Next JS, Wordpress</title>
-        <meta name="description" content="Front-end Developer - HTML, CSS, JavaScript, React JS, Next JS, Wordpress" />
+        <title>TechyDNA - Software Developer | JavaScript, Typescript, C#</title>
+        <meta name="description" content="Software Developer - JavaScript, Typescript, React, C#, Wordpress" />
+        <meta name="google-site-verification" content="Amvuj9UHCMR39j9MHtT_YCrSC_zQSdqSjLflP4sG4ds" />
         <link rel="shortcut icon" href="/icons/logo.svg" />
       </Head>
-      <div className="h-screen overflow-scroll scroll-smooth z-0 md:snap-y md:snap-mandatory text-white" style={{ backgroundColor: 'rgb(17, 24, 39)' }}>
+      <div className="h-screen overflow-scroll scroll-smooth z-0 lg:snap-y lg:snap-mandatory text-white" style={{ backgroundColor: 'rgb(17, 24, 39)' }}>
         <Header />
         <Hero />
         <About />
@@ -27,8 +28,6 @@ const Home: NextPage = () => {
         <Projects />
         <BackToTop />
       </div>
-      {/* <div className="h-screen overflow-y-auto scroll-smooth z-0 text-white" style={{ backgroundColor: 'rgb(17, 24, 39)' }}>
-      </div> */}
     </React.Fragment>
   )
 }

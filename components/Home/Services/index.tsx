@@ -2,11 +2,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-type Props = {}
+type Props = {};
 
 const Services = (props: Props) => {
 	return (
-		<section id="services" className='min-h-screen md:snap-start'>
+		<section id="services" className='min-h-screen lg:snap-start'>
 			<motion.div className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row xl:px-10 justify-center items-center max-w-7xl mx-auto pt-36 md:pt-6">
 				<motion.h3
 					className="sectionHeader"
@@ -16,10 +16,10 @@ const Services = (props: Props) => {
 				>
 					services
 				</motion.h3>
-				<div className='w-full flex max-[768px]:flex-wrap max-[768px]:items-center max-[768px]:justify-center gap-6 overflow-x-auto snap-x snap-mandatory px-6'>
-					<div className='w-[378px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all'>
+				<div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex gap-6 px-6'>
+					<div className='lg:w-[378px] snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all shadow-sm shadow-slate-700 border border-slate-600'>
 						<motion.div
-							className='bg-gray-600 w-1/2 p-8 rounded-full flex items-center justify-center aspect-[1]'
+							className='bg-gray-600 max-w-[144px] p-8 rounded-full flex items-center justify-center aspect-[1]'
 							initial={{ scale: 0.7 }}
 							whileInView={{ scale: 1 }}
 							transition={{ duration: 1 }}
@@ -31,9 +31,9 @@ const Services = (props: Props) => {
 							<p className="text-sm text-gray-300 font-light">We build and maintain performant websites and applications to meet your day-to-day business needs.</p>
 						</div>
 					</div>
-					<div className='w-[378px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all'>
+					<div className='lg:w-[378px] snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all shadow-sm shadow-slate-700 border border-slate-600'>
 						<motion.div
-							className='bg-gray-600 w-1/2 rounded-full flex items-center justify-center aspect-[1] p-8'
+							className='bg-gray-600 max-w-[144px] rounded-full flex items-center justify-center aspect-[1] p-8'
 							initial={{ scale: 0.7 }}
 							whileInView={{ scale: 1 }}
 							transition={{ duration: 1 }}
@@ -45,9 +45,9 @@ const Services = (props: Props) => {
 							<p className="text-sm text-gray-300 font-light">We develop and integrate APIs to enable your applications and websites interact with other data sources for enriched user experience.</p>
 						</div>
 					</div>
-					<div className='w-[378px] max-[625px]:w-full snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all'>
+					<div className='lg:w-[378px] snap-center bg-gray-800 flex flex-col gap-5 flex-shrink-0 items-center px-4 py-8 rounded-lg mb-10 cursor-pointer hover:scale-[1.02] transition-all shadow-sm shadow-slate-700 border border-slate-600'>
 						<motion.div
-							className='bg-gray-600 w-1/2 rounded-full flex items-center justify-center aspect-[1] p-8'
+							className='bg-gray-600 max-w-[144px] rounded-full flex items-center justify-center aspect-[1] p-8'
 							initial={{ scale: 0.7 }}
 							whileInView={{ scale: 1 }}
 							transition={{ duration: 1 }}

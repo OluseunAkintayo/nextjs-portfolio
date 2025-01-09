@@ -8,9 +8,9 @@ const Hero = () => {
 	const [text] = useTypewriter({
 		words: [
 			"<Software Developer />",
-			"HTML | CSS | JavaScript",
-			"React JS | Next JS",
-			"MongoDB | Postgres | Express | NodeJS"
+			"JavaScript | Typescript | React | Next",
+			"Dotnet | Node",
+			"MongoDB | Postgres | MySQL"
 		],
 		loop: true,
 		delaySpeed: 3500
