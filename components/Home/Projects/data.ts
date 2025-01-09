@@ -1,20 +1,29 @@
 const projectsData: { id: number; name: string; icon: string; url: string; github?: string; madeWith: string; summary: string; styling?: string; }[] = [
 	{
+		id: 6,
+		name: "Invoice Generator",
+		icon: "/icons/document.png",
+		url: "https://invoice--gen.vercel.app/",
+		madeWith: "React, Tailwind CSS, Shadcn",
+		summary: "Generate beautiful invoices for your business",
+		github: 'https://github.com/OluseunAkintayo/InvoiceMaker-UI',
+	},
+	{
+		id: 7,
+		name: "NexTools",
+		icon: "/icons/wrench.png",
+		url: "https://nextools.vercel.app/",
+		madeWith: "React, Tailwind CSS, Shadcn",
+		summary: "JSON Converter, CSV Converter, TS Interface Generator",
+		// github: 'https://github.com/OluseunAkintayo/dev-tools',
+	},
+	{
 		id: 5,
 		name: 'Sterling Meme Generator',
 		icon: '/img/sterling.svg',
 		url: 'https://sterling.ng/meme',
 		madeWith: 'React, SCSS',
 		summary: 'Events meme generator for Sterling Bank Plc.'
-	},
-	{
-		id: 6,
-		name: "Invoice Generator",
-		icon: "https://img.icons8.com/ultraviolet/40/file.png",
-		url: "https://invoice--gen.vercel.app/",
-		madeWith: "React, Tailwind CSS, Shadcn",
-		summary: "Generate invoices for your business",
-		github: 'https://github.com/OluseunAkintayo/InvoiceMaker-UI',
 	},
 	{
 		id: 3,
