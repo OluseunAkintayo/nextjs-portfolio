@@ -8,7 +8,7 @@ import Hero from '../components/Home/Hero';
 import Projects from '../components/Home/Projects';
 import Services from '../components/Home/Services';
 import Skills from '../components/Home/Skills';
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const Home: NextPage = () => {
   return (
