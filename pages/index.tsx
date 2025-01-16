@@ -8,7 +8,7 @@ import Hero from '../components/Home/Hero';
 import Projects from '../components/Home/Projects';
 import Services from '../components/Home/Services';
 import Skills from '../components/Home/Skills';
-
+import { Analytics } from '@vercel/analytics/next';
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +28,7 @@ const Home: NextPage = () => {
         <Projects />
         <BackToTop />
       </div>
+      <Analytics />
     </React.Fragment>
   )
 }
